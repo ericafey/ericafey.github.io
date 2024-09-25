@@ -2,6 +2,12 @@
 <html>
 <head>
 <title> My Way, Frank Sinatra - song lyrics</title>
+<script>
+    function changeImage(){
+        image = document.querySelector('img');
+        image.src = ( image.src.includes("FrankSinatra.jpg")) ? "MyWayAlbum.jpg" : "FrankSinatra.jpg";
+    }
+</script>
 </head>
 <body>
     <h1>My Way, Frank Sinatra</h1>
@@ -55,6 +61,7 @@
     <p>
     ... Yes, it was my way<br>
     </p>
+    <button type="button" onclick="changeImage()">Change the Image!</button> 
 
 </body>
 </html>
