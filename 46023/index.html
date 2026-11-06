@@ -1,0 +1,18 @@
+<div id="out"></div>
+
+<script>
+
+var xml = new ActiveXObject('Msxml2.DOMDocument.3.0');
+xml.async="false";
+xml.load("xml.xml");
+
+var xsl = new ActiveXObject('Msxml2.DOMDocument.3.0');
+xsl.async="false";
+xsl.load("xsl.xml");
+
+ex = xml.transformNode(xsl);
+document.getElementById("out").innerHTML = ex;
+
+alert("success");
+
+</script>
