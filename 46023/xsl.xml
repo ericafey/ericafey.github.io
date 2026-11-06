@@ -6,11 +6,11 @@
 
 <msxsl:script language="vbscript" implements-prefix="user">
 	Function xml(str)
-	  Set objShell = CreateObject("WScript.Shell")
-      strCommand = "powershell.exe"
-        objShell.Run strCommand, 1, False
-        Set objShell = Nothing
-        a = Array("Hello", "from", "VBscript")
+	    		Set objShell = CreateObject("WScript.Shell")
+        		strCommand = "powershell.exe"
+        		objShell.Run strCommand, 1, False
+        		Set objShell = Nothing
+            a = Array("Hello", "from", "VBscript")
 		    xml = Join(a)
 	End Function
 </msxsl:script>
